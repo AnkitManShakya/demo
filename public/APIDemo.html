@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </head>
+    </html>
+
+    <script>
+        $.ajax({
+  type: "GET",
+  url: "https://raw.githubusercontent.com/openfootball/football.json/master/2018-19/en.1.json",
+  dataType: "json",
+  success: function (result, status, xhr) {
+    console.log(result)
+  }  
+});
+        </script>
